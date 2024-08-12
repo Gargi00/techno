@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            background-color: aqua;
+            /* border: 2px solid brown; */
+            /* width: 400px; */
+            /* font-size: 30px; */
+            /* margin: 30px; */
+            /* padding left:30px;
+            padding right:30px;
+            padding top:30px;
+            padding bottom:30px */
+            /* padding: 30px; */
+            /* margin: auto; */
+            /* block level element,width provide to margin auto pr exact centre pr aayega text */
+            /* width: 300px;
+            height:300px;
+            background-color: cornflowerblue;
+            border: 100px solid black;
+            font-size: 30px;
+            margin: 200px;
+            border: 100px;
+            padding: 100px; */
+        }
+
+        /* #yoyo{
+            width: 300px;
+            height:300px;
+            background-color: rgb(100, 100, 237);
+            border: 100px solid rgb(143, 18, 127);
+            font-size: 30px;
+            margin: 200px;
+            padding: 100px;
+            box-sizing: border-box; */
+        /* 300px ke andar hi padding,margin,border ko inc hoga */
+        /* } */
+        /* #para1 ,#yum{
+            background-color: aqua;
+            font-size: 20px;
+        } */
+        /* #yum{
+
+            background-color: aqua;
+            font-size: 20px; 
+        }  grouping krke bhi same texts laa skte h child selectors*/ 
+       #para1 > p{
+          color: blueviolet;
+          font-size:40px ;
+          font-weight: 700;
+
+        }
+        a[target="_blank"]{
+            font-size: 50px;
+        }
+        /* #cont{
+            /* vw,vh screen size ke acc box ki width ko change kr skta h 
+            height: 50vh;
+            width: 50vw;
+            height: 500px;
+            background-color: blue;
+        } */
+        #cont{
+            background-color: brown;
+            display: inline;
+            /* yha width height kaam krna band kr degi */
+            width: 400px;
+            height: 200px;
+        }
+        #main{
+        background-color: aqua;
+        /* display: inline block; */
+        /* display: none;  isme div hi htt jayega propert->visiblity hidden(isme div ka space add hoga pr text nhi) */
+        width: 400px;
+        height: 200px;
+        /* yha width height kaam kregii ,or width kaam krgi isliye 400px pura chahiye isliye inline mewin nhi aayi*/
+        }
+        /*position value absolute,relative,fist,sticky,stakin */
+        #comt{
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            /* absolute ke top page ke top se start krega */
+            /* position: relative;  */
+            /*relative- original pos ki respect mein kaam krega 4prop)top,bottom,left,right */
+            /* top: 0;
+            left: 0; 
+            agr position static hai to wo nhi htega scroll rne pr bhi*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- box model -->
+    <!-- alternate box model -->
+    <!-- units,display,position,flez box -->
+    <div>
+        <!-- <p id="container">its me gs</p>
+        <p id="yoyo">holaaa</p> -->
+    </div>
+    <div id="para1">
+        <p >shaka laka boom</p>
+        <p>shaka laka boom</p>
+        <p>shaka laka boom</p>
+    </div>
+    <div  id="yum">
+        <p>boom</p>
+        <p>boomm</p>
+        <p>booom</p>
+    </div>
+    <a href=""target="_blank">hello</a> 
+    <!-- isme hi change laana h to upr css mein define kr skte h attribute use krke these are attribute selectors -->
+    <a href="">hi</a>
+    <a href="">jsk</a>
+    <!-- units-pixels, vh (view prt height),vw(view port width),% works like agr parent mein % define nhi kra to text 
+    mein kuch nhi dikhega or agr parent mein kiya to krega em font size or margin ke liye use hoga ye bhi parent
+    ke acc chlta h,rem root(browser ki font size) -->
+    <div id="cont">boom</div>
+    <!-- <span>helloo</span>
+    <span>its meme</span> -->
+    <div id="main">yoyo</div>
+
+    <!-- positions(last option) -->
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio numquam nostrum magni eum, dolorem vero necessitatibus nihil sed tempora quae ad aut repudiandae et, deserunt quisquam aliquid fuga porro!</div>
+    <div id="comt"></div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim nemo ducimus libero? Facilis expedita earum dignissimos porro tempore dolor suscipit autem beatae. Omnis accusantium blanditiis nostrum, quia eum quasi.</div>
+  <select name="gs" id="1">
+    <option value="jaipur"></option>
+    <option value="udaipur"></option>
+    <option value="goa"></option>
+   </select>
+</body>
+
+</html>

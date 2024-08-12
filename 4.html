@@ -1,0 +1,51 @@
+<!-- flex,grid ,psuedo classes pseudo elements-->
+<!-- .container>.box#box-$(box-$)*7 -->
+<div class="container">
+    <div id="box1" class="box"> box1</div>
+    <div id="box2" class="box"> box2</div>
+    <div id="box3" class="box"> box3</div>
+    <div id="box4" class="box"> box4</div>
+    <div id="box5" class="box"> box5</div>
+</div>
+<style>
+    .{
+        box-sizing: 30px;
+    }
+    .container {
+        border: 3px solid black;
+        display: flex;
+        /* align-items: start; */
+        /* align exis cross axis ke around kaaam kregi */
+         flex-direction: row; 
+        height: 70vh;
+         flex-wrap: wrap; 
+        /* gap: 10px; */
+        /* flex-flow: row wrap; */
+        justify-content: space-between;
+        /* justify main axis ke around kaam kregi x */
+        /* flex se centre ,end */
+        /* align-content: flex-start; */
+    }
+
+     .box { 
+        /* order mein jiska order bda wo last mein place hoga */
+        border: 3px solid blue;
+         width: 100px; 
+        /* margin: 10px; ye nahi hoga space dene ke lite parent border se bhi gap lega ye */
+        /* flex-basis: 25%; */
+
+    }
+    #box1{
+        /* order: 3; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 2; */
+        /* flex: 0 2 200px; */
+        /* flex grow,shrinkbasis */
+        align-self: self-start;
+         
+    }
+    #box3{
+        /* order: 4; */
+        /* flex-grow: 2; */
+    }
+</style>

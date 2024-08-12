@@ -1,0 +1,94 @@
+<!-- transform (property)->(values)translate,skew,scale,rotate-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #container {
+        width: 400px;
+        height: 400px;
+         background-color: mediumseagreen; 
+        /* transform:translate(500px,500px) ; */
+        /* isko idhr se udhr shift krne ke liye */
+        /* transform: scale(2); */
+        /* transform: scaleX(2); */
+        /* ye bda krta h kitne times bda krna hai original ka times mein bda hoga */
+        /* transform: rotate(30deg); */
+        /* ye z axis ke along kaam kr rha h */
+        /* transform: rotatex(130deg); */
+        /* transform: skewx(30deg); */
+        /* transition: 1s ease-in-out; */
+        /* ease in out smooth change ke liye use krte h 1s time */
+        /* border: 3px solid burlywood; */
+        /* animation:spinner 4s ease-in-out 4;  */
+        
+
+
+    }
+
+    /* #container:hover{
+        background-color: rgb(141, 19, 108);
+         border-radius: 50%; 
+        transform: rotate(180deg);
+        border: 1px solid black;
+    } */
+    #container:hover #box {
+        transform: translate(300px, 300px);
+    }
+
+    #box {
+        width: 100px;
+        height: 100px;
+        background-color: beige;
+        /* transition: 2s linear; */
+        align-content: center;
+        animation: spinner 4s ease-in-out 4;
+    }
+
+    /* @keyframes spinner {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        25% {
+            transform: translate(300px, 0px);
+        }
+
+        50% {
+            transform: translate(300px, 300px);
+        }
+
+        75% {
+            transform: translate(0px, 300px);
+        }
+    } */
+    /* @keyframes spinner{
+        from{
+            transform:rotate(0deg) ;
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    } */
+</style>
+
+<body>
+    <div id="container">
+        <!-- <div id="box"></div> -->
+
+    </div>
+</body>
+
+</html>

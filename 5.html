@@ -1,0 +1,50 @@
+<!-- all about grid -->
+<div class="container">
+    <div id="box1" class="box"> box1</div>
+    <div id="box2" class="box"> box2</div>
+    <div id="box3" class="box"> box3</div>
+    <div id="box4" class="box"> box4</div>
+    <div id="box5" class="box"> box5</div>
+    <div id="box6" class="box"> box6</div>
+    <div id="box7" class="box"> box7</div>
+    <div id="box8" class="box"> box8</div>
+</div>
+<style>
+    .container {
+        height: 30vh;
+        /* grid-template-columns: 200px 200px 200px ; */
+        grid-template-columns: repeat(3, 1fr);
+        /* grid template columns: repeat(auto fill,200px) */
+        /*  kitne  column chahiye*/
+        display: grid;
+        gap: 10px;
+        /* justify-content: center; */
+        /* align-items: center; */
+        grid-template-areas:"hdr hdr hdr hdr"
+                            "sbr main main main"
+                            "ftr ftr ftr ftr" ;
+    }
+
+    .box {
+        background-color: rgb(134, 38, 104);
+        border: 1px solid black;
+    }
+
+    #box1 {
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        /* inspect se grid pr numbering phir start end krke layout bnege */
+        grid-area:hdr ;
+    }
+     #box2{
+        /* grid-column-start:2 ; */
+        /* grid-column-end:3 ; */
+        grid-area: sbr;
+    } 
+    #box3{
+        grid-area: main;
+    }
+    #box4{
+        grid-area: ftr;
+    }
+</style>
