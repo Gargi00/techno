@@ -98,11 +98,51 @@ console.log(num1 == num2) //only values compare
 console.log(num1===num2) //will compare datatype and values
 
 //logical operators
-let isloggedin=10; //any num greater than 0 it will return
-let isaddin=20;
-console.log("is the user logged in signed in");
-isloggedin && isaddin;
+//let isloggedin=true
+//let isaddin=true
+let isloggedin=10; //any num greater than 0 it will return return the num written at addin as it is last
+let isaddin=20;//wherea 0 and num is there than 0 will give false
+console.log("is the user logged in signed in",isloggedin && isaddin)
+console.log(isaddin||isloggedin) //0||0 is 0,0||10 is 10
+
+//conditional statements
+//if else,switch,ternary operator
+//functions
+//array,object
+//loops
+
+// let count=20;
+// if(count==20){
+//     console.log("the count is 20");
+// }
+// else{
+//     console.log("the count is not 20");
+// }
 
 
+//  if(count==20){
+//      console.log("the count is 20");
+//  }
+//  else if(count>20){
+//      console.log("the count is not 20");
+//  }
+//  else{
+//     console.log("coun is less than 20");
+//  }
+
+let firstnum1=prompt("enter the first num"); //input from user but prompt does not work in nodejs
+console.log(firstnum1);
+//prompt the user to enter their username and password
+//if username is admin and password is 123 in numbers
+//if succcess than author successful else not
+
+let user=prompt("enter your username")
+let pass=prompt("enter your password")
+if(user==="admin" && pass===123){
+    console.log("author successful");
+}
+else{
+    console.log("author not successful");
+}
 
 
