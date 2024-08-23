@@ -145,6 +145,17 @@ console.table(data);
 //map,filter,reduce
 let arr=[10,20,30,50,40];
  arr.map((item)=>{      //map is func which accepts another func in its parameter so it is called  and the function present inside is callback func or anonymous function
-   return item*10;
+   return item*100;
  })   
  console.log(arr);
+ let newarr=arr.map((item)=>{
+       if(item==30){
+        return item;
+       }
+ })//map returns new array with same lemngth as original
+
+ //foreach(doent return anything undefinred only console krke print) except this same as map
+ let result=arr.forEach((item)=>{
+     return item;
+ }
+)

@@ -142,5 +142,7 @@ let str="boom dhoom";
 // console.log(Math.sqrt(16));
 
 // to generate 4 digit otp
-let num=Math.floor(1000 +Math.random() *9000);
-console.log("otp is",num);
+// let num=Math.floor(Math.random() *10000);  2 digit or 3 dig num can come
+// let num=Math.floor(1000 +Math.random() *10000); ab range is from 1000 to 10,999(5 digit can come)
+// let num=Math.floor(1000 +Math.random() *9000); //ab range is from 1000 to 9999
+// console.log("otp is",num);

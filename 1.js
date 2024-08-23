@@ -1,3 +1,4 @@
+//javascript.info
 // threaded, synchronous(line by line seq mein output),dynamic type,scripting lang(inpreted-run time)
 
 console.log("hello techno"); //to print the value
